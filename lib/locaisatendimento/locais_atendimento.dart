@@ -3,7 +3,12 @@ import 'package:hack_for_good/locaisatendimento/atendimento/Atendimento.dart';
 import 'package:hack_for_good/locaisatendimento/testecovid/teste_covid.dart';
 import 'package:hack_for_good/menu/custom_drawer.dart';
 
-class LocaisAtendimento extends StatelessWidget {
+class LocaisAtendimento extends StatefulWidget {
+  @override
+  _LocaisAtendimentoState createState() => _LocaisAtendimentoState();
+}
+
+class _LocaisAtendimentoState extends State<LocaisAtendimento> {
   final List<Tab> myTabs = <Tab>[
     Tab(text: 'ATENDIMENTO'),
     Tab(text: 'TESTE COVID-19'),
@@ -38,9 +43,9 @@ class LocaisAtendimento extends StatelessWidget {
 
   Widget buscaTela(String label, BuildContext buildContext) {
     if (label == 'atendimento') {
-      return Atendimento().build(buildContext);
+      return Atendimento();
     } else {
-      return TesteCovid().build(buildContext);
+      return TesteCovid();
     }
   }
 }
