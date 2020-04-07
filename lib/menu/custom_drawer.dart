@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:hack_for_good/alerta/alerta_mapa.dart';
+import 'package:hack_for_good/configuracao/configuracao.dart';
 import 'package:hack_for_good/locaisatendimento/locais_atendimento.dart';
 import 'package:hack_for_good/menu/drawer_tile.dart';
 import 'package:hack_for_good/produto/produto_list.dart';
@@ -36,7 +37,7 @@ class CustomDrawer extends StatelessWidget {
                 }),
                 DrawerTile("CONFIGURAÇÕES", () {
                   Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => ProdutoList()));
+                      MaterialPageRoute(builder: (context) => Configuracao()));
                 }),
               ],
             )));
