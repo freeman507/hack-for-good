@@ -5,7 +5,7 @@ import 'package:hack_for_good/models/teste_covid.dart';
 
 class TesteCovidDetalhe extends StatelessWidget {
 
-  TesteCovid testeCovid;
+  TesteCovid testeCovid = TesteCovid();
 
   TesteCovidDetalhe(TesteCovid testeCovid) {
     this.testeCovid = testeCovid;
@@ -28,7 +28,7 @@ class TesteCovidDetalhe extends StatelessWidget {
             Container(
               margin: EdgeInsets.fromLTRB(0, 0, 0, 10),
               child: Text(
-                testeCovid.nomeEstabelecimento,
+                testeCovid.nomeEstabelecimento ?? "",
                 textAlign: TextAlign.center,
                 style: TextStyle(
                     fontSize: 25.0,
@@ -74,7 +74,7 @@ class TesteCovidDetalhe extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
                   Text(
-                    "NOME: " + testeCovid.nomeEstabelecimento ,
+                    "NOME: " + this.testeCovid.nomeEstabelecimento.toString(),
                     textAlign: TextAlign.center,
                     style: TextStyle(
                         color: Colors.blueAccent),

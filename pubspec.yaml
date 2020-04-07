@@ -50,6 +50,7 @@ flutter:
     - images/cotonete.png
     - images/pao.png
     - images/mapa.png
+    - images/alerta.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
