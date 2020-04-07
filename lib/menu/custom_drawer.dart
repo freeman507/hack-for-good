@@ -16,7 +16,7 @@ class CustomDrawer extends StatelessWidget {
                 Container(
                   padding: EdgeInsets.all(10),
                   child: Text(
-                    "LOGO DO APP",
+                    "CovidHelp",
                     style: TextStyle(fontSize: 30, color: Colors.blueAccent, fontWeight: FontWeight.bold),
                   ),
                 ),

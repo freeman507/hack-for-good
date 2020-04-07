@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hack_for_good/locaisatendimento/atendimento/hospital_detalhe.dart';
 import 'package:hack_for_good/locaisatendimento/locais_atendimento.dart';
 
 class Atendimento extends StatefulWidget {
@@ -51,7 +52,7 @@ class _AtendimentoState extends State<Atendimento> {
               Navigator.push(
                   context,
                   MaterialPageRoute(
-                      builder: (context) => LocaisAtendimento()));
+                      builder: (context) => HospitalDetalhe()));
             },
             child: Image.asset(
               "images/mapa.png",

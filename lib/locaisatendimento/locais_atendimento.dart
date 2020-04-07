@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hack_for_good/locaisatendimento/atendimento/Atendimento.dart';
-import 'package:hack_for_good/locaisatendimento/testecovid/teste_covid.dart';
+import 'package:hack_for_good/locaisatendimento/testecovid/teste_covid_list.dart';
 import 'package:hack_for_good/menu/custom_drawer.dart';
 
 class LocaisAtendimento extends StatefulWidget {
@@ -45,7 +45,7 @@ class _LocaisAtendimentoState extends State<LocaisAtendimento> {
     if (label == 'atendimento') {
       return Atendimento();
     } else {
-      return TesteCovid();
+      return TesteCovidList();
     }
   }
 }
